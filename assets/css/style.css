@@ -1,0 +1,94 @@
+:root {
+    --background: #7DCE13;
+    --input: #FFFEBC;
+    --borders: #5F7161;
+    --btns: #4E944F;
+    --hover: #a8e25d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--background);
+}
+
+header .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .header .logo {
+    padding: 1.5rem;
+}
+
+header .header .logo img {
+    width: 100%;
+    height: 5rem;
+}
+
+.home {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .form_calcular input {
+    padding: 1.3rem;
+    border-radius: .3rem;
+    outline: none;
+    font-size: 1.5rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.home .form_calcular input[type="text"]:focus {
+    border: 1px solid var(--borders);
+    background: #EFEAD8;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.home .form_calcular input[type="submit"] {
+    background: var(--btns);
+    border: 1px solid var(--borders);
+    color: #fff;
+}
+
+.home .form_calcular input[type="submit"]:hover {
+    background: var(--hover);
+    border: 1px solid var(--input);
+    animation: forwards;
+    transition: all .5s;
+}
+
+.home .container_result {
+    margin-top: 2rem;
+    width: 80rem;
+    height: 40rem;
+    display: flex;
+    border-radius: 1.2rem;
+    background: var(--input);
+    -webkit-box-shadow: 4px 4px 13px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 13px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 13px -5px rgba(0, 0, 0, 0.75);
+}
+
+.home .container_result .item{
+    border: solid 1px black;
+    width: 50%;
+}
