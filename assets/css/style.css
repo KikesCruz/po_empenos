@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+
 :root {
     --background: #7DCE13;
     --input: #FFFEBC;
@@ -11,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -78,7 +83,7 @@ header .header .logo img {
 
 .home .container_result {
     margin-top: 2rem;
-    width: 80rem;
+    width: 60rem;
     height: 40rem;
     display: flex;
     border-radius: 1.2rem;
@@ -88,7 +93,33 @@ header .header .logo img {
     box-shadow: 4px 4px 13px -5px rgba(0, 0, 0, 0.75);
 }
 
-.home .container_result .item{
-    border: solid 1px black;
+.home .container_result .item {
     width: 50%;
+    padding: 2.5rem;
+    text-align: end;
+}
+
+.home .container_result .item h3, h2 {
+    display: block;
+    margin: 1.5rem 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+
+.home .container_result .item span {
+    position: mixed;
+    display: block;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+
+.apartado{
+    color: red;
+}
+
+.home .container_result .item .entregar {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
 }
